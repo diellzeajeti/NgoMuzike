@@ -9,11 +9,12 @@
 <body>
     <header>
         <img src="img/logo1.png" class="logo"/>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#banner"> NgoMuzikë </a></li>
-                <li><a href="#rrethnesh">RRETH NESH</a></li>
-                <li><a href="#këngët">KËNGËT</a></li>
-                <li><a href="#song">
+            <li><a href="#banner" onclick="toggleMenu();"> NgoMuzikë </a></li>
+                <li><a href="#rrethnesh" onclick="toggleMenu();">RRETH NESH</a></li>
+                <li><a href="#këngët" onclick="toggleMenu();">KËNGËT</a></li>
+                <li><a href="#song" onclick="toggleMenu();">
                     <div class="dropdown">
                         <button class="dropbtn">
                             ZHANRET
@@ -27,8 +28,8 @@
                         </div>
                     </div>
                 </a></li>
-                <li><a href="#info">INFO</a></li>
-                <li><a href="#"><button class="show-modal">KYÇU</button></a></li>
+                <li><a href="#info" onclick="toggleMenu();">INFO</a></li>
+                <li><a href="#"><button class="show-modal" onclick="toggleMenu();">KYÇU</button></a></li>
         </ul>
     </header>
     <!-- The Modal -->
@@ -71,7 +72,7 @@
         </div>
     </form>
     </div>
-    
+
     <section class="banner" id="banner">
         <div class="content">
             <div class="left-col">
