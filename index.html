@@ -31,6 +31,47 @@
                 <li><a href="#"><button class="show-modal">KYÇU</button></a></li>
         </ul>
     </header>
+    <!-- The Modal -->
+    <div class="modal hidden">
+        <button class="close-modal">&times</button>
+
+    <!-- Modal Content -->
+    <form class="modal-content" id="form" action="#">
+
+        <div class="container">
+            <h1>Regjistrohu</h1>
+            <p>Ju lusim të plotësoni këtë formularë për t'u regjistruar.</p>
+            <hr>
+
+            <div class="input-control">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email adresa" name="email" id="email" required>
+            <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+            <label for="psw"><b>Fjalëkalimi</b></label>
+            <input type="password" placeholder="Shëno fjalëkalimin" name="psw" id="password" required>
+            <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+            <label for="psw-repeat"><b>Konfirmo fjalëkalimin</b></label>
+            <input type="password" placeholder="Konfirmo fjalëkalimin" name="psw-repeat" id="passwordRepeat" required>
+            <div class="error"></div>
+            </div>
+            <hr>
+            <p id="terms-p">Duke u regjistruar në faqen tonë ju pranoni <a href="#">kushtet tona të privatësisë</a>.</p>
+        
+            <button type="submit" class="registerbtn">Regjistrohu</button>
+          </div>
+          
+          <div class="container signin">
+            <p>Keni një llogari? <a href="#">Kyçu këtu</a>.</p>
+        </div>
+    </form>
+    </div>
+    
     <section class="banner" id="banner">
         <div class="content">
             <div class="left-col">
