@@ -88,3 +88,156 @@ icon6.onclick = function(){
         icon6.src = "img/play-icon.png";
     }
 }
+
+/* Kenge te reja*/
+let song7 = document.getElementById('song7');
+let song8 = document.getElementById('song8');
+let song9 = document.getElementById('song9');
+let song10 = document.getElementById('song10');
+let song11 = document.getElementById('song11');
+let song12 = document.getElementById('song12');
+let song13 = document.getElementById('song13');
+
+let icon7 = document.getElementById('7');
+let icon8 = document.getElementById('8');
+let icon9 = document.getElementById('9');
+let icon10 = document.getElementById('10');
+let icon11 = document.getElementById('11');
+let icon12 = document.getElementById('12');
+let icon13 = document.getElementById('13');
+
+icon7.onclick = function(){
+    if(song7.paused){
+        song7.play();
+        icon7.src = "img/pause-icon.png";
+    } else{
+        song7.pause();
+        icon7.src = "img/play-icon.png";
+    }
+}
+
+icon8.onclick = function(){
+    if(song8.paused){
+        song8.play();
+        icon8.src = "img/pause-icon.png";
+    } else{
+        song8.pause();
+        icon8.src = "img/play-icon.png";
+    }
+}
+icon9.onclick = function(){
+    if(song9.paused){
+        song9.play();
+        icon9.src = "img/pause-icon.png";
+    } else{
+        song9.pause();
+        icon9.src = "img/play-icon.png";
+    }
+}
+icon10.onclick = function(){
+    if(song10.paused){
+        song10.play();
+        icon10.src = "img/pause-icon.png";
+    } else{
+        song10.pause();
+        icon10.src = "img/play-icon.png";
+    }
+}
+icon11.onclick = function(){
+    if(song11.paused){
+        song11.play();
+        icon11.src = "img/pause-icon.png";
+    } else{
+        song11.pause();
+        icon11.src = "img/play-icon.png";
+    }
+}
+icon12.onclick = function(){
+    if(song12.paused){
+        song12.play();
+        icon12.src = "img/pause-icon.png";
+    } else{
+        song12.pause();
+        icon12.src = "img/play-icon.png";
+    }
+}
+icon13.onclick = function(){
+    if(song13.paused){
+        song13.play();
+        icon13.src = "img/pause-icon.png";
+    } else{
+        song13.pause();
+        icon13.src = "img/play-icon.png";
+    }
+}
+
+//kenge te vjetra
+let song14 = document.getElementById('song14');
+let song15 = document.getElementById('song15');
+let song16 = document.getElementById('song16');
+let song17 = document.getElementById('song17');
+let song18 = document.getElementById('song18');
+let song19 = document.getElementById('song19');
+
+let icon14 = document.getElementById('14');
+let icon15 = document.getElementById('15');
+let icon16 = document.getElementById('16');
+let icon17 = document.getElementById('17');
+let icon18 = document.getElementById('18');
+let icon19 = document.getElementById('19');
+
+icon14.onclick = function(){
+    if(song14.paused){
+        song14.play();
+        icon14.src = "img/pause-icon.png";
+    } else{
+        song14.pause();
+        icon14.src = "img/play-icon.png";
+    }
+}
+icon15.onclick = function(){
+    if(song15.paused){
+        song15.play();
+        icon15.src = "img/pause-icon.png";
+    } else{
+        song15.pause();
+        icon15.src = "img/play-icon.png";
+    }
+}
+icon16.onclick = function(){
+    if(song16.paused){
+        song16.play();
+        icon16.src = "img/pause-icon.png";
+    } else{
+        song16.pause();
+        icon16.src = "img/play-icon.png";
+    }
+}
+icon17.onclick = function(){
+    if(song17.paused){
+        song17.play();
+        icon17.src = "img/pause-icon.png";
+    } else{
+        song17.pause();
+        icon17.src = "img/play-icon.png";
+    }
+}
+icon18.onclick = function(){
+    if(song18.paused){
+        song18.play();
+        icon18.src = "img/pause-icon.png";
+    } else{
+        song18.pause();
+        icon18.src = "img/play-icon.png";
+    }
+}
+icon19.onclick = function(){
+    if(song19.paused){
+        song19.play();
+        icon19.src = "img/pause-icon.png";
+    } else{
+        song19.pause();
+        icon19.src = "img/play-icon.png";
+    }
+}
+

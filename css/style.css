@@ -289,3 +289,219 @@ section{
   top: 6px;
   font-size: 16px;
 }
+.menu main .song_side{
+  width: 70%;
+  height: 100vh;
+  background: #424;
+
+}
+/* Kenget me te reja nga viti 2022 */
+main .song_side{
+  position: relative;
+  height: 90%;
+  background-color: #424;
+  box-shadow: 5px 0 2px #090f1f;
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 20px;
+  /* top: -100%;
+  left: 25.8%; */
+  
+}
+
+main .song_side .new_songs{
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+main .song_side .new_songs .h4{
+  display: flex;
+  align-items: center;
+}
+main .song_side .new_songs .songs{
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+main .song_side .new_songs .songs::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+main .song_side .new_songs .songs li{
+  min-width: 100px;
+  height: 140px;
+  list-style-type: none;
+  margin-right: 10px;
+  transition: .3s linear;
+}
+
+main .song_side .new_songs .songs li:hover{
+  background: rgb(105, 105, 170, .1);
+}
+
+main .song_side .new_songs .songs li .img_play{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .song_side .new_songs .songs li .img_play img{
+  width: 100%;
+  height: 100%;
+}
+
+main .song_side .new_songs .songs li .img_play .icon{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: .3s linear;
+  opacity: 0;
+}
+
+main .song_side .new_songs .songs li:hover .img_play .icon{
+  opacity: 1;
+}
+
+main .song_side .new_songs .songs li h5{
+  padding: 5px 0 0 5px;
+  line-height: 15px;
+  font-size: 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+main .song_side .new_songs .songs li h5 .subtitle{
+  font-size: 9px;
+  color: #4c5262;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* Kenge te vjetra */
+main .song_side .old_songs{
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+main .song_side .old_songs .h4{
+  display: flex;
+  align-items: center;
+}
+main .song_side .old_songs .songs{
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+main .song_side .old_songs .songs::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+main .song_side .old_songs .songs li{
+  min-width: 100px;
+  height: 140px;
+  list-style-type: none;
+  margin-right: 10px;
+  transition: .3s linear;
+}
+
+main .song_side .old_songs .songs li:hover{
+  background: rgb(105, 105, 170, .1);
+}
+
+main .song_side .old_songs .songs li .img_play{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .song_side .old_songs .songs li .img_play img{
+  width: 100%;
+  height: 100%;
+}
+
+main .song_side .old_songs .songs li .img_play .icon{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: .3s linear;
+  opacity: 0;
+}
+
+main .song_side .old_songs .songs li:hover .img_play .icon{
+  opacity: 1;
+}
+
+main .song_side .old_songs .songs li h5{
+  padding: 5px 0 0 5px;
+  line-height: 15px;
+  font-size: 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+main .song_side .old_songs .songs li h5 .subtitle{
+  font-size: 9px;
+  color: #4c5262;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* Top Singer Cards  */
+#h2{
+  font-size: 1em;
+  margin-top: 5%;
+  font-weight: bold;
+  margin-left: 2%;
+  
+}
+table{
+  width: 100%;
+  height: auto;
+  margin: auto; 
+  
+} 
+.img{
+  height: 140px;
+  width: 160px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 0px 50px;
+}
+.img:hover{
+  box-shadow: 0 0 50px 0 #00ffff;
+  transition: 0.9s;
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+      filter: hue-rotate(0deg);
+  }
+  100%{
+      filter: hue-rotate(360deg);
+  }
+}
