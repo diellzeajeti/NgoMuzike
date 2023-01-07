@@ -1,0 +1,128 @@
+@media (max-width: 991px){
+	header{
+		padding: 10px 20px;
+		height: 10%;
+	}
+	
+	section{
+		padding: 20px;
+	}
+	.banner .content .left-col h1{
+		font-size: 4em;
+		color: rgb(247, 223, 7);
+		margin-top: 20%;
+	}
+	.banner .content .right-col p{
+		font-size: 1.5em;
+		color: rgb(247, 223, 7);
+		margin-top: 25%;
+		font-weight: 700;
+	}
+	.banner .content .right-col #icon{
+			width: 70px;
+			cursor: pointer;
+			margin-top: 25%;
+	}
+	header .navigation{
+		display: none;
+	}
+	header .navigation.active{
+		width: 100%;
+		height: calc(100% - 68px);
+		position: fixed;
+		top: 68px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: #000;
+	}
+	header .navigation li{
+		margin-left: 0;
+	}
+	header .navigation li a{
+		color: #fff;
+		font-size: 1.6em;
+	}
+	.show-modal{
+		color: #fff;
+		font-size: 1em;
+	}
+	.dropdown-content a {
+		padding: 0;
+	  }
+	.menuToggle{
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url(../img/menu.png);
+		background-size: 30px;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.menuToggle.active{
+		background: url(../img/close.png);
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.row .col50{
+		position: relative;
+		width: 100%;
+	}
+	.row .col50 .imgabout{
+		height: 380px;
+		margin-top: 20px;
+	}
+	.table{
+		display: none;
+	}
+	.menu main {
+		min-height: 175vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.menu main .menu_side{
+		width: 55%;
+		height: 80vh; 
+		background: #000; 
+		border-radius: 10px;
+	}
+	.menu main .menu_side h1{
+		text-align: center;
+	}
+	.menu main .menu_side .playlist h4{
+		padding-left: 20%;
+	}
+	.menu main .menu_side .menu_song{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.menu main .song_side{
+		width: 100%;
+		height: 100vh; 
+		margin: 10px;
+	}
+	main .song_side{
+		box-shadow: none;
+	}
+	
+	.modal{
+		width: 40%;
+		height: 82vh;
+		padding: 2rem;
+	}
+	.close-modal {
+		font-size: 2rem;
+		top: 0;
+		right: 1.1rem;
+	}
+
+}
