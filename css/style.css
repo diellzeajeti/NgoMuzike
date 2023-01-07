@@ -13,6 +13,7 @@ p{
 body{
     min-height: 1000px;
 }
+
 /* NAVBAR */
 header{
     position: fixed;
@@ -96,4 +97,42 @@ header .navigation li a:hover{
     font-family: sans-serif;
     border: none;
     cursor: pointer;
+}
+/* Home Page */
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/bg1.jpg);
+  background-size: cover;
+}
+
+.banner .content{
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content .left-col h1{
+  font-size: 5em; 
+  color: rgb(247, 223, 7); 
+}
+.left-col{
+  float: left;
+}
+.banner .content .right-col{
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 45%;
+}
+.banner .content .right-col p{
+  font-size: 2em;
+  color: rgb(247, 223, 7);
+}
+.banner .content .right-col #icon{
+      width: 80px;
+      cursor: pointer;
 }
