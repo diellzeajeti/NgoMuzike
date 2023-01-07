@@ -233,3 +233,9 @@
 		height: 85vh;
 	} 
 }
+@media (max-width: 810px){
+	.modal{
+		width: 50%;
+		height: 85vh;
+	} 
+}
