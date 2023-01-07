@@ -149,3 +149,40 @@
 	}
 	
 }
+
+@media (max-width: 480px){
+	.banner .content .right-col p{
+		margin-top: -65%;
+		font-weight: 600;
+	}
+	.banner .content .right-col #icon{
+		width: 70px;
+		margin-top: -65%;
+	}
+	.row .col50 .imgabout{
+		height: 300px;
+		margin-top: 20px;
+	}
+	.menu main .menu_side{
+		width: 70%;
+	}
+	.menu main .menu_side .playlist h4{
+		padding-left: 10%;
+	}
+	.modal{
+		border-radius: 2%;
+		height: 70%;
+	}
+	.modal-content #terms-p{
+		display: block;
+	}
+	.modal-content p{
+		display: none;
+	}
+	.modal-content{
+		font-size: 10px;
+	}
+	.modal-content input{
+		font-size: 10px;
+	}
+}
