@@ -218,3 +218,24 @@
 	}
 
 }
+@media (max-width: 670px){
+	.banner .content .right-col p{
+		margin-top: -60%;
+		font-weight: 500;
+	}
+	.banner .content .right-col #icon{
+		width: 70px;
+		margin-top: -60%;
+	}
+	
+	.modal{
+		width: 50%;
+		height: 85vh;
+	} 
+}
+@media (max-width: 810px){
+	.modal{
+		width: 50%;
+		height: 85vh;
+	} 
+}
