@@ -3,6 +3,97 @@ window.addEventListener('scroll', function(){
     const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
 });
+//Register Modal
+const modal = document.querySelector('.modal');
+const closeModalBtn = document.querySelector('.close-modal');
+
+const showModalBtns = document.querySelectorAll('.show-modal');
+const closeModal = function () {
+    modal.classList.add('hidden');
+   
+}
+const openModal = function () {
+    modal.classList.remove('hidden');
+   
+}
+// Open modal
+for (let i = 0; i < showModalBtns.length; i++)
+    showModalBtns[i].addEventListener('click', openModal);
+
+closeModalBtn.addEventListener('click', closeModal);
+
+
+// Close modal
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+    }
+});
+
+//Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const passwordRepeat = document.getElementById('passwordRepeat');
+
+form.addEventListener('submit', e =>{
+    e.preventDefault();
+
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success');
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+const validateInputs = () => {
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const passwordRepeatValue = passwordRepeat.value.trim();
+
+    if(emailValue === ''){
+        setError(email, 'Email is required!');
+    } else if(!isValidEmail(emailValue)){
+        setError(email, 'Provide a valid email address!');
+    } else{
+        setSuccess(email);
+    }
+
+    if(passwordValue === ''){
+        setError(password, 'Password is required!');
+    } else if(passwordValue.length < 8 ){
+        setError(password, 'Password must be at least 8 character.')
+    } else{
+        setSuccess(password);
+    }
+
+    if(passwordRepeatValue === ''){
+        setError(passwordRepeat, 'Please confirm your password!');
+    } else if(passwordRepeatValue !== passwordValue){
+        setError(passwordRepeat, "Passwords doesn't match!");
+    } else{
+        setSuccess(passwordRepeat);
+    }
+}
 //Audio in Homepage
 
 let mySong = document.getElementById('mySong');
@@ -17,6 +108,7 @@ icon.onclick = function(){
         icon.src = "img/play.png";
     }
 }
+
 
 //Audio in Main
 let song1 = document.getElementById('song1');
