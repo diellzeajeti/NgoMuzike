@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NgoMuzikë</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
@@ -12,66 +14,16 @@
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
             <li><a href="#banner" onclick="toggleMenu();"> NgoMuzikë </a></li>
-                <li><a href="#rrethnesh" onclick="toggleMenu();">RRETH NESH</a></li>
+                <li><a href="rrethnesh.php" onclick="toggleMenu();">RRETH NESH</a></li>
                 <li><a href="#këngët" onclick="toggleMenu();">KËNGËT</a></li>
-                <li><a href="#song" onclick="toggleMenu();">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            ZHANRET
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">POP</a>
-                            <a href="#">HIPHOP</a>
-                            <a href="#">RAP</a>
-                            <a href="#">ROCK</a>
-                            <a href="#">CLASSIC</a>
-                        </div>
-                    </div>
-                </a></li>
-                <li><a href="#info" onclick="toggleMenu();">INFO</a></li>
-                <li><a href="#"><button class="show-modal" onclick="toggleMenu();">KYÇU</button></a></li>
+                <li><a href="votokengen.php" onclick="toggleMenu();"> VOTO </a></li>
+                <li><a href="#info" onclick="toggleMenu();">INFO</a></li>               
+                <form action="includes/process-form.php">
+                <li><a href="#"><button class="logout" name="logout">DIL</button></a></li>
+                </form>
         </ul>
     </header>
-    <!-- The Modal -->
-    <div class="modal hidden">
-        <button class="close-modal">&times</button>
-
-    <!-- Modal Content -->
-    <form class="modal-content" id="form" action="#">
-
-        <div class="container">
-            <h1>Regjistrohu</h1>
-            <p>Ju lusim të plotësoni këtë formularë për t'u regjistruar.</p>
-            <hr>
-
-            <div class="input-control">
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Email adresa" name="email" id="email" required>
-            <div class="error"></div>
-            </div>
-
-            <div class="input-control">
-            <label for="psw"><b>Fjalëkalimi</b></label>
-            <input type="password" placeholder="Shëno fjalëkalimin" name="psw" id="password" required>
-            <div class="error"></div>
-            </div>
-
-            <div class="input-control">
-            <label for="psw-repeat"><b>Konfirmo fjalëkalimin</b></label>
-            <input type="password" placeholder="Konfirmo fjalëkalimin" name="psw-repeat" id="passwordRepeat" required>
-            <div class="error"></div>
-            </div>
-            <hr>
-            <p id="terms-p">Duke u regjistruar në faqen tonë ju pranoni <a href="#">kushtet tona të privatësisë</a>.</p>
-        
-            <button type="submit" class="registerbtn">Regjistrohu</button>
-          </div>
-          
-          <div class="container signin">
-            <p>Keni një llogari? <a href="#">Kyçu këtu</a>.</p>
-        </div>
-    </form>
-    </div>
+   
 
     <section class="banner" id="banner">
         <div class="content">
@@ -89,22 +41,7 @@
         
     </section>
 </section>
-<section class="about" id="rrethnesh">
-    <div class="row">
-        <div class="col50">
-            <h2 class="titleText"><span>Rr</span>eth Nesh</h2>
-            <p id="p-about"><span>NgoMuzikë</span> është një sajt me karakter shqip i implementuar në dhjetor të vitit 2022 e që i'u mundëson të dëgjoni vetëm muzikë shqipe. Folklori muzikor shqiptar është jashtëzakonisht i pasur , çka dhe shprehet në ekzistencën e muzikës vokale që nga forma njëzërëshe e deri tek shumëzërëshi; në muzikën me vegla popullore; muzikën me zë e vegla; muzikën për shoqërimin e valleve popullore, etj.
-                Muzika është arti i shprehjes së ndjenjave dhe mendimeve me anë të tingujve. Duke pasur parasysh se arti ynë muzikorë është mjaft i pasur
-                me këngë mjaft të bukura nga zhanre të ndryshme, NgoMuzikë ka vendosur të u'a sjell të gjitha në një vend, duke i'u kursyer kohë, dhe duke ju argëtuar nëpërmjet talentëve tanë shqiptar.
-            <br><br>NgoMuzikë ju ofron të gjithë përdoruesve këngë duke filluar nga ato më në trend dhe më të rejat, gjer tek ato më të vjetra, mirëpo edhe pse të vjetra karakteri i tyre është unik dhe ato do të dëgjohen gjatë.</p>
-        </div>
-        <div class="col50">
-            <div class="imgabout">
-                <img src="img/imgabout.png"/>
-            </div>
-        </div>
-    </div>
-</section>
+
 <section class="menu" id="këngët">
     <div class="title">
         <h2 class="titleText"><span>K</span>ëngët tona</h2>
