@@ -13,11 +13,11 @@
         <img src="img/logo1.png" class="logo"/>
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#banner" onclick="toggleMenu();"> NgoMuzikë </a></li>
+            <li><a href="ngomuzike.php" onclick="toggleMenu();"> NgoMuzikë </a></li>
                 <li><a href="rrethnesh.php" onclick="toggleMenu();">RRETH NESH</a></li>
-                <li><a href="#këngët" onclick="toggleMenu();">KËNGËT</a></li>
+                <li><a href="ngomuzike.php" onclick="toggleMenu();">KËNGËT</a></li>
                 <li><a href="votokengen.php" onclick="toggleMenu();"> VOTO </a></li>
-                <li><a href="#info" onclick="toggleMenu();">INFO</a></li>               
+                <li><a href="contactform.php" onclick="toggleMenu();">KONTAKTI</a></li>               
                 <form action="includes/process-form.php">
                 <li><a href="#"><button class="logout" name="logout">DIL</button></a></li>
                 </form>
@@ -349,10 +349,9 @@
         </a></li>
     </ul>
     <ul class="menu-footer">
-      <li class="menu__item"><a class="menu__link" href="#">NgoMuzikë</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Rreth Nesh</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Shërbimet</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Kontakti</a></li>
+      <li class="menu__item"><a class="menu__link" href="ngomuzike.php">NgoMuzikë</a></li>
+      <li class="menu__item"><a class="menu__link" href="rrethnesh.php">Rreth Nesh</a></li>]
+      <li class="menu__item"><a class="menu__link" href="contactform.php">Kontakti</a></li>
 
     </ul>
     <p>&copy;2022 NgoMuzikë | All Rights Reserved</p>
