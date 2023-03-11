@@ -1,3 +1,11 @@
+<?php 
+include "classes/dbConfig.class.php";
+
+session_start();
+
+$userid = $_SESSION['userid'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
