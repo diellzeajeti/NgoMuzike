@@ -42,6 +42,45 @@
         </div>
     </div>
 </section>
+<section class = "slideshow">
+    <h1>Çfarë mund të bëni në NgoMuzikë? </h1>
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/ngomuzike.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/rrethnesh.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/voto.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/info.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</section>
 <footer class="footer" id="info">
     <div class="waves">
       <div class="wave" id="wave1"></div>
@@ -76,5 +115,5 @@
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
 </html>
