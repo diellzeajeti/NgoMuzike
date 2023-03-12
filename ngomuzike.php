@@ -25,7 +25,7 @@ $userid = $_SESSION['userid'];
                 <li><a href="rrethnesh.php" onclick="toggleMenu();">RRETH NESH</a></li>
                 <li><a href="ngomuzike.php" onclick="toggleMenu();">KËNGËT</a></li>
                 <li><a href="votokengen.php" onclick="toggleMenu();"> VOTO </a></li>
-                <li><a href="contactform.php" onclick="toggleMenu();">KONTAKTI</a></li>               
+                <li><a href="contactform.php" onclick="toggleMenu();">KONTAKTO</a></li>               
                 <form action="includes/process-form.php">
                 <li><a href="#"><button class="logout" name="logout">DIL</button></a></li>
                 </form>
@@ -358,7 +358,7 @@ $userid = $_SESSION['userid'];
     </ul>
     <ul class="menu-footer">
       <li class="menu__item"><a class="menu__link" href="ngomuzike.php">NgoMuzikë</a></li>
-      <li class="menu__item"><a class="menu__link" href="rrethnesh.php">Rreth Nesh</a></li>]
+      <li class="menu__item"><a class="menu__link" href="rrethnesh.php">Rreth Nesh</a></li>
       <li class="menu__item"><a class="menu__link" href="contactform.php">Kontakti</a></li>
 
     </ul>

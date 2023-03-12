@@ -13,12 +13,11 @@
         <img src="img/logo1.png" class="logo"/>
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#banner" onclick="toggleMenu();"> NgoMuzikë </a></li>
+            <li><a href="ngomuzike.php" onclick="toggleMenu();"> NgoMuzikë </a></li>
                 <li><a href="rrethnesh.php" onclick="toggleMenu();">RRETH NESH</a></li>
-                <li><a href="#këngët" onclick="toggleMenu();">KËNGËT</a></li>
-                <li><a href="" onclick="toggleMenu();">VOTO</a></li>
-                <li><a href="#info" onclick="toggleMenu();">INFO</a></li>
-                <li><a href="admin/index.php">Admin Login</a></li>                
+                <li><a href="ngomuzike.php" onclick="toggleMenu();">KËNGËT</a></li>
+                <li><a href="votokengen.php" onclick="toggleMenu();">VOTO</a></li>
+                <li><a href="contactform.php" onclick="toggleMenu();">KONTAKT0</a></li>                
                 <form action="includes/process-form.php">
                 <li><a href="#"><button class="logout" name="logout">DIL</button></a></li>
                 </form>
@@ -105,7 +104,6 @@
     <ul class="menu-footer">
       <li class="menu__item"><a class="menu__link" href="#">NgoMuzikë</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Rreth Nesh</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Shërbimet</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Kontakti</a></li>
 
     </ul>
