@@ -128,3 +128,21 @@ Sidebar Menu/Menu Style
 .sidebar_menu ul li a:hover{
 	background:#EFEFEF;
 }
+
+/* Users table */
+.table{
+	
+	background:lightcyan;
+	color:darkred; 
+	border: 2px solid black;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin-left:0;
+}
+.table  td {
+	border: 1px solid black;
+}
+#tb-header{
+	background: rgb(190, 61, 137);
+	color: #fff;
+}
