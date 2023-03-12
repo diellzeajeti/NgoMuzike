@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    color: white;
+    background: rgba(1, 1, 1, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+.contact-form label,
+.contact-form input{
+    font-size: 1.3rem;
+}
+
+.contact-form input {
+    margin-bottom: 1rem;
+}
+
+.submit {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+}
+
+.submit:hover {
+    backdrop-filter: brightness(2000);
+}
+
+.submit:focus {
+    border: 2px solid rgb(2, 29, 39);
+}
+.submit{
+    margin-top: 3px;
+}
