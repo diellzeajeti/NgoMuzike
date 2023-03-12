@@ -49,6 +49,18 @@ header .navigation li a{
 header .navigation li a:hover{
     color: rgb(247, 223, 7);
 }
+.logout {
+    font-size: inherit;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #eee;
+    border: none;
+    cursor: pointer;
+}
+.logout:hover{
+    color: red;
+}
 /* Home Page */
 .banner{
   position: relative;
