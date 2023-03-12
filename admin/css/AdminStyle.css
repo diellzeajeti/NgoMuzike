@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+html,body{ 
+	padding:0px; 
+	margin:0px; 
+	background:url(../img/body_back1.jpg);
+}
+.header_menu{
+	height:40px;
+	width:100%;
+	background:url(../img/menu_back.jpg) repeat-x;
+	-moz-box-shadow:0px 0px 8px #000;
+	-webkit-box-shadow:0px 0px 8px #000;
+	box-shadow:0px 0px 8px #000;
+	border:1px medium #000;
+}
+
+
+.header_wrapper{
+	width:100%;
+	height:22px;
+	padding:0px;
+	margin:0px;
+	background:#3C3C3C;
+}
+.time-logout{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:12px;
+	width:920px;
+	font-weight:900;
+	margin-left:auto;
+	margin-right:auto;
+}
+.time-logout ul{
+	float:right;
+	padding:0px;
+	margin:0px;
+}
+.time-logout ul li{
+	position:relative;
+	list-style:none;
+} 
+.time-logout ul li a{
+	text-decoration:none;
+	line-height:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:900;
+	text-shadow:1px 1px 5px #333;
+	color:#FFF;
+}
+.time-logout ul li a:hover{
+	text-decoration:underline;
+}
+/* CONTENT OF ADMINISTRATOR */
+.container_wrapper{
+	width:920px;
+	height:700px;
+	padding:0px;
+	margin-top:16px;
+	margin-left:auto;
+	margin-right:auto;
+	-moz-box-shadow:0px 0px 10px #B0B0B0;
+	-webkit-box-shadow:0px 0px 10px #B0B0B0;
+	border:1px medium #B0B0B0;
+	background: lightgoldenrodyellow;
+}
+.home_content{
+	width:660px;
+	height:500px;
+	float:right;
+	margin-right:8px;
+	padding:0px;
+	
+}
+.home_content .header{
+	font-weight:bold;
+	color:#333;
+	border-bottom:2px solid #dadada;
+	padding-bottom:3px;
+	padding-left:3px;
+}
+.home_content .banner{
+	height:210px;
+	margin-top:0px;
+	width:100%;
+	-moz-box-shadow:0px 0px 10px #B0B0B0;
+	-webkit-box-shadow:0px 0px 10px #B0B0B0;
+	-khtml-box-shadow:0px 0px 10px #B0B0B0;
+	border:1px medium #B0B0B0;
+}
+
+/*
+Sidebar Menu/Menu Style
+*/
+.sidebar_menu{
+	width:220px;
+	height:500px;
+	margin-left:9px;
+	float:left;
+}
+.sidebar_menu .header{
+	font-weight:bold;
+	color:#06F;
+	margin-bottom:1px;
+	border-bottom:2px solid #dadada;
+	padding:4px 0px 4px 20px;
+}
+.sidebar_menu ul{
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+	margin-bottom:10px;
+}
+.sidebar_menu ul li{ padding-bottom:0px;}
+.sidebar_menu ul li a{
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:90%;
+	color:#09F;
+	display:block;
+	border-bottom:1px solid #dadada;
+	padding-left:20px;
+	text-decoration:none;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+.sidebar_menu ul li a:hover{
+	background:#EFEFEF;
+}
