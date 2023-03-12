@@ -1,3 +1,10 @@
+<?php
+session_start();
+require('connection.php');
+$stmt = $conn->prepare("SELECT * FROM perdoruesi");
+$stmt->execute();
+$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,6 +60,23 @@
                         <input type="reset" value="Refuzo" id="button2"/>
                     </div>                  
                 </form>
+                <br /><br />
+                <table class="table">
+                	<tr id="tb-header">
+                        <td>Emri</td>
+                        <td>Fjalëkalimi i enkriptuar</td>
+                        <td>Email</td>
+                    </tr>
+                   <tr>
+                   <?php foreach ($users as $user): ?>
+                    <tr>
+                        <td><?php echo $user['username']; ?></td>
+                        <td><?php echo $user['password']; ?></td>
+                        <td><?php echo $user['email']; ?></td>
+                    </tr>
+                    <?php endforeach; ?>
+                   </tr>
+                </table>
                
             </div>
     </div>
